@@ -1,0 +1,2 @@
+module XdAppHelper
+end
