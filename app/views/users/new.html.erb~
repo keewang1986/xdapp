@@ -1,0 +1,17 @@
+<% provide(:title,"用户注册")%>
+
+<%= form_for(@user) do |f| %>
+   <%= f.label :name,'用户名' %>
+   <%= f.text_field :name %>
+   <br />
+   <%= f.label :email,'密码' %>
+   <%= f.email_field :email %>
+   <br />
+   <%= f.label :name,'密码' %>
+   <%= f.password_field :password %>
+   <br />
+   <%= f.label :name,'确认密码' %>
+   <%= f.password_field :confirm_password %>
+   <br />
+   <%= f.submit "注册"%>
+<% end %>

@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  resources :users
+
   get 'xd_app/home'
 
   get 'about' => 'xd_app#about'
 
   get 'contact' => 'xd_app#contact'
+  get 'login' => 'xd_app#login'
+  post 'login' => 'xd_app#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -15,7 +15,7 @@ class XdAppController < ApplicationController
          if user
              @notice="登陆成功"
              session[:us_id] = user.id
-             redirect_to users_url
+             redirect_to user_url()
          else
              @notice="登陆失败"
          end
